@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bootstrap and JS Piano</title>
+        <link rel="stylesheet" href="../dist/main.css" />
+    </head>
+    <body>
+        <audio src="/public/sounds/C.mp3" id="c"></audio>
+        <audio src="/public/sounds/C-sharp.mp3" id="c-sharp"></audio>
+        <audio src="./sounds/D.mp3" id="d"></audio>
+        <audio src="./sounds/D-sharp.mp3" id="d-sharp"></audio>
+        <audio src="./sounds/E.mp3" id="e"></audio>
+        <audio src="./sounds/F.mp3" id="f"></audio>
+        <audio src="./sounds/F-sharp.mp3" id="f-sharp"></audio>
+        <audio src="./sounds/G.mp3" id="g"></audio>
+        <audio src="./sounds/G-sharp.mp3" id="g-sharp"></audio>
+        <audio src="./sounds/A.mp3" id="a"></audio>
+        <audio src="./sounds/A-sharp.mp3" id="a-sharp"></audio>
+        <audio src="./sounds/B.mp3" id="b"></audio>
+        <audio src="./sounds/C5.mp3" id="c5"></audio>
+        <div class="container vh-100 w-50 d-flex flex-column">
+            <div class="row z-100 h-25 card-img-overlay">
+                <div class="col-4 w-25 offset-3 d-flex justify-content-start">
+                    <div class="col-2 d-grid ps-4 ms-5 w-25">
+                        <button
+                            type="button"
+                            class="btn btn-dark"
+                            data-note="c-sharp"
+                        >
+                            C#
+                        </button>
+                    </div>
+                    <div class="col-2 d-grid mx-4">
+                        <button
+                            type="button"
+                            class="btn btn-dark"
+                            data-note="d-sharp"
+                        >
+                            D#
+                        </button>
+                    </div>
+                </div>
+
+                <div class="w-25 d-flex justify-content-start">
+                    <div class="col-2 d-grid">
+                        <button
+                            type="button"
+                            class="btn btn-dark"
+                            data-note="f-sharp"
+                        >
+                            F#
+                        </button>
+                    </div>
+                    <div class="col-2 d-grid mx-4">
+                        <button
+                            type="button"
+                            class="btn btn-dark"
+                            data-note="g-sharp"
+                        >
+                            G#
+                        </button>
+                    </div>
+                    <div class="col-2 d-grid">
+                        <button
+                            type="button"
+                            class="btn btn-dark"
+                            data-note="a-sharp"
+                        >
+                            A#
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="row ms-4 h-50 z-0 py-3 px-0">
+                <div class="col d-grid">
+                    <button type="button" class="btn btn-light" data-note="c">
+                        Do
+                    </button>
+                </div>
+                <div class="col d-grid">
+                    <button type="button" class="btn btn-light" data-note="d">
+                        Re
+                    </button>
+                </div>
+                <div class="col d-grid">
+                    <button type="button" class="btn btn-light" data-note="e">
+                        Mi
+                    </button>
+                </div>
+                <div class="col d-grid">
+                    <button type="button" class="btn btn-light" data-note="f">
+                        Fa
+                    </button>
+                </div>
+                <div class="col d-grid">
+                    <button type="button" class="btn btn-light" data-note="g">
+                        Sol
+                    </button>
+                </div>
+                <div class="col d-grid">
+                    <button type="button" class="btn btn-light" data-note="a">
+                        La
+                    </button>
+                </div>
+                <div class="col d-grid">
+                    <button type="button" class="btn btn-light" data-note="b">
+                        Ti
+                    </button>
+                </div>
+                <div class="col d-grid">
+                    <button type="button" class="btn btn-light" data-note="c5">
+                        Do
+                    </button>
+                </div>
+            </div>
+        </div>
+        <script src="../dist/app.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>
